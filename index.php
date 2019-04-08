@@ -1,8 +1,28 @@
 
 <!DOCTYPE html> 
 <html lang="en">
+
 <head>
     <title> Yo Yo YO </title>
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+  
+	<!-- Firebase App is always required and must be first -->
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCOOprUrB5cG5ruc_YjVFq6leSlHMM7IIg",
+	    authDomain: "mydashi.firebaseapp.com",
+	    databaseURL: "https://mydashi.firebaseio.com",
+	    projectId: "mydashi",
+	    storageBucket: "mydashi.appspot.com",
+	    messagingSenderId: "1028456675021"
+	  };
+	  var defaultApp = firebase.initializeApp(config);
+
+		console.log(defaultApp.name);  // "[DEFAULT]"
+	</script> 	
 </head>
 
     <style>
@@ -17,6 +37,7 @@
     <br/>
 	<a href="sia.mp3">click here for awesome music!</a>
 	<a href="clonewars.html">Click here for game</a>
+
 	
  </body>
 
