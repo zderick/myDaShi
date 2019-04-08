@@ -12,7 +12,7 @@
 	<script>
 	  // Initialize Firebase
 	  var config = {
-	    apiKey: "AIzaSyCOOprUrB5cG5ruc_YjVFq6leSlHMM7IIg",
+	    apiKey: $FIREBASE_TOKEN,
 	    authDomain: "mydashi.firebaseapp.com",
 	    databaseURL: "https://mydashi.firebaseio.com",
 	    projectId: "mydashi",
@@ -21,7 +21,9 @@
 	  };
 	  var defaultApp = firebase.initializeApp(config);
 
-		console.log(defaultApp.name);  // "[DEFAULT]"
+	  console.log(defaultApp.name);  // "[DEFAULT]"
+	  var defaultDatabase = firebase.database();
+
 	</script> 	
 </head>
 
