@@ -20,28 +20,3 @@
 	
  </body>
 
-
-
-$db = parse_url(getenv("https://data.heroku.com/datastores/0dfa2da9-851e-450a-a7fa-7655078f6612"));
-$db["path"] = ltrim($db["path"], "/");
-
-
-
-
-  -h, --host=HOSTNAME      database server host or socket directory (default: "local socket")
-  -p, --port=PORT          database server port (default: "5432")
-  -U, --username=USERNAME  database user name (default: "derickzhang")
-  -w, --no-password        never prompt for password
-  -W, --password           force password prompt (should happen automatically)
-
-
-
-CREATE TABLE IF NOT EXISTS test(
-	da_shi_id int NOT NULL,
-	my_str VARCHAR,
-	PRIMARY KEY(da_shi_id)
-);
-
-
-INSERT INTO test(my_str, da_shi_id)
-VALUES ('numberone!', 1);
