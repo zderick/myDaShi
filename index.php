@@ -12,7 +12,7 @@
 	<script>
 	  // Initialize Firebase
 	  var config = {
-	    apiKey: $FIREBASE_TOKEN,
+	    apiKey: FIREBASE_TOKEN,
 	    authDomain: "mydashi.firebaseapp.com",
 	    databaseURL: "https://mydashi.firebaseio.com",
 	    projectId: "mydashi",
