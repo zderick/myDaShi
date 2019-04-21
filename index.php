@@ -39,7 +39,7 @@
 	<br/>
 	<a href="sia.mp3">click here for awesome music!</a>
 	<br/>
-	<a href="clonewars.html">Click here for game</a>
+	<a href="CloneWars.html">Click here for game</a>
 
 	
  </body>
