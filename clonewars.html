@@ -1,6 +1,6 @@
 <html>
 <head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
+	<script src="libs/three.js"></script>
 	<script src="libs/physi.js"></script>
 	<script src="libs/threex.keyboardstate.js"></script>
 	<script src="fonts/helvetiker_regular.typeface.js"></script> 
@@ -163,7 +163,7 @@
 	{
 		loss = new Audio("loss.mp3");
 		victory = new Audio("victory.mp3");
-		//music = new Audio("main.mp3");
+		music = new Audio("main.mp3");
 	}
 
 	function init()
@@ -171,7 +171,7 @@
 		keyboard = new THREEx.KeyboardState();
 		
 		loadSounds();
-		//music.play();
+		music.play();
 	
 		scene = new Physijs.Scene();
 		scene.setGravity(new THREE.Vector3( 0, force, -100 ));
@@ -268,16 +268,16 @@
 			"<a href='VaderWars.html'>Next Level</a>";
 			document.body.appendChild(Levels);
 			victory.play();
-			//music.pause();
+			music.pause();
 			win = true;
 			winWaiter = 0;
 		}
 		else if (vader.position.y < -100 && winWaiter > 50 && !win)
 		{
 			Levels.innerHTML = "You Lose" + "<br/>" + 
-			"<a href='CloneWars.html'>Try Again?</a>";
+			"<a href='index.html'>Try Again?</a>";
 			document.body.appendChild(Levels);
-			//music.pause();
+			music.pause();
 			loss.play();
 			winWaiter = 0;
 		}
